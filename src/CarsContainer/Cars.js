@@ -45,7 +45,7 @@ const Cars = (props) => {
 
 
           <div className='createCommentComp'>
-            <CreateComment carID={'http://127.0.0.1:8000/api/cars/' + car.id} addComment={props.addComment} />
+            <CreateComment carID={'https://ghostrider-react-django-python.herokuapp.com/api/cars/' + car.id} addComment={props.addComment} />
           </div><br />
           <hr />
           <h4 className="update-delete">Update/Delete Entry<br />(Available for Poster ONLY)</h4>

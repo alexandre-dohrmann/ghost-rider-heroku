@@ -29,7 +29,7 @@ class CreateCar extends Component {
     // fileUploadHandler = () => {
     //     const fd = new FormData();
     //     fd.append('image', this.state.images, this.state.images.name);
-    //     axios.post('http://127.0.0.1:8000/api/cars/', fd)
+    //     axios.post('https://ghostrider-react-django-python.herokuapp.com/api/cars/', fd)
     //         .then(res => {
     //             console.log(res);
     //         });

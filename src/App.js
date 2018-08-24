@@ -13,13 +13,13 @@ class App extends Component {
   }
 
   getToken = async () => {
-    const token = await fetch('http://localhost:8000/api/get_csrf/', {
+    const token = await fetch('https://ghostrider-react-django-python.herokuapp.com/api/get_csrf/', {
       credentials: 'include'
     })
     const parsedToken = await token.json()
     console.log(parsedToken, 'parsed token #####');
     return parsedToken.token
-    
+
   }
 
 

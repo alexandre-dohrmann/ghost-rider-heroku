@@ -27,7 +27,7 @@ class MainContainer extends Component {
 
   componentDidMount() {
     // if (this.state.logged_in) {
-    //   fetch('http://localhost:8000/get_auth_token/', {
+    //   fetch('http://https://ghostrider-react-django-python.herokuapp.com/get_auth_token/', {
     //     headers: {
     //     }
     //   })
@@ -50,7 +50,7 @@ class MainContainer extends Component {
     e.preventDefault();
     const data = { ...this.state, csrfmiddlewaretoken: this.props.csrf_token };
     console.log(data)
-    const registrationResponse = await fetch('http://localhost:8000/api/users/', {
+    const registrationResponse = await fetch('https://ghostrider-react-django-python.herokuapp.com/api/users/', {
       credentials: 'include',
       method: 'POST',
       body: JSON.stringify(
@@ -79,7 +79,7 @@ class MainContainer extends Component {
     e.preventDefault();
     const data = { ...this.state, csrfmiddlewaretoken: this.props.csrf_token };
     console.log(data)
-    const loginResponse = await fetch('http://localhost:8000/get_auth_token/', {
+    const loginResponse = await fetch('https://ghostrider-react-django-python.herokuapp.com/get_auth_token/', {
       credentials: 'include',
       method: 'POST',
       body: JSON.stringify(
